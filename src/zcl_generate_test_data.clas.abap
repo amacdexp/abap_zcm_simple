@@ -41,10 +41,6 @@ CLASS ZCL_GENERATE_TEST_DATA IMPLEMENTATION.
     up to 10 rows.
 
 
-    write 'Console Output.'.
-
-    cl_demo_output=>display( 'itab' ).
-
     out->write( sy-dbcnt ).
     out->write( 'ZSFLIGHT data inserted successfully!').
 
