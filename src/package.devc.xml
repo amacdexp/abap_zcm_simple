@@ -4,6 +4,7 @@
   <asx:values>
    <DEVC>
     <CTEXT>CLOUD MIGRATION SIMPLE</CTEXT>
+    <TPCLASS>X</TPCLASS>
    </DEVC>
   </asx:values>
  </asx:abap>
