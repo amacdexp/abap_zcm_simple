@@ -21,28 +21,28 @@ CLASS ZCL_GENERATE_TEST_DATA IMPLEMENTATION.
     DELETE FROM zsflight_ext.
 
 *   Prepare first entry for table
-    WA_ITAB-CLIENT = SY-MANDT.
-    WA_ITAB-CARRIER_ID = 'LH'.
-    WA_ITAB-CONNECTION_ID = '0400'.
-    WA_ITAB-FLIGHT_DATE = cl_abap_context_info=>get_system_date( ).
+    move sy-mandt to wa_itab-client.
+    move 'LH'     to wa_itab-carrier_id.
+    move '0400'   to wa_itab-connection_id.
+    move sy-datum to wa_itab-flight_date.
 
-    WA_ITAB-RESTRICTED_SEATS = 200.
-    WA_ITAB-RESTRICTED_SEATS_B = 11.
-    WA_ITAB-RESTRICTED_SEATS_F = 10.
+    move 200      to wa_itab-restricted_seats.
+    move 11       to wa_itab-restricted_seats_b.
+    move 10       to wa_itab-restricted_seats_f.
 
 
 *   Write to table
-    INSERT ZSFLIGHT_EXT FROM @WA_ITAB.
+    insert zsflight_ext from wa_itab.
 
 *   Check output with demo class
-    SELECT
-    FROM ZSFLIGHT_EXT fields *
-    INTO TABLE @ITAB
-    UP TO 10 ROWS.
+    select *
+    from zsflight_ext
+    into table itab
+    up to 10 rows.
 
 
     out->write( sy-dbcnt ).
-    out->write( 'ZSFLIGHT_EXT data inserted successfully!').
+    out->write( 'ZSFLIGHT data inserted successfully!').
 
   ENDMETHOD.
 
