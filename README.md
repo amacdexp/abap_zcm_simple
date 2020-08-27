@@ -2,7 +2,7 @@
 ABAP Cloud migration simple
 
 
-This contains a very simple example of an ABAP Package which will migrate from on-premise ABAP   to SCAP ABAP Environment with minor quick fixes
+This contains a very simple example of an ABAP Package which will migrate from on-premise ABAP   to SCP ABAP Environment with minor quick fixes
 
 Missing DOMAINS & DATA ELEMENTS were previously created in SCP_ABAP_STEP1  branch
 
