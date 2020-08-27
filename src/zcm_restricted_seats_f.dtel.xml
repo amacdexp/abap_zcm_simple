@@ -15,7 +15,9 @@
     <SCRTEXT_S>Res.SeatsF</SCRTEXT_S>
     <SCRTEXT_M>Restricted Seats F</SCRTEXT_M>
     <SCRTEXT_L>Restricted Seats First Class</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>E</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>
