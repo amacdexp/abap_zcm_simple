@@ -42,7 +42,7 @@ CLASS ZCL_GENERATE_TEST_DATA IMPLEMENTATION.
 
 
     out->write( sy-dbcnt ).
-    out->write( 'ZSFLIGHT data inserted successfully!').
+    out->write( 'ZSFLIGHT_EXT data inserted successfully!').
 
   ENDMETHOD.
 
